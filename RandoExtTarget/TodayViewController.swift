@@ -24,10 +24,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBAction func goButtonTapped(_ sender: Any) {
         let randomNumber = arc4random_uniform(UInt32(inputStepper.value)) + 1
-        UIView.animate(withDuration: 0.2, delay: 0, options: .allowUserInteraction, animations: { 
+        UIView.animate(withDuration: 0.3, delay: 0, options: .allowUserInteraction, animations: {
             self.outputLabel.alpha = 0.0
         }) { (_) in
-            UIView.animate(withDuration: 0.2, delay: 0, options: .allowUserInteraction, animations: { 
+            UIView.animate(withDuration: 0.3, delay: 0, options: .allowUserInteraction, animations: {
                 self.outputLabel.text = String(randomNumber)
                 self.outputLabel.alpha = 1.0
             }, completion: { (_) in
@@ -36,6 +36,21 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         }
     }
     
+    @IBAction func quickButtonTapped(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.3, delay: 0, options: .allowUserInteraction, animations: { 
+            self.inputNumberLabel.alpha = 0.0
+        }) { (_) in
+            UIView.animate(withDuration: 0.3, delay: 0, options: .allowUserInteraction, animations: {
+                self.inputStepper.value = Double(sender.tag)
+                self.inputNumberLabel.text = String(Int(self.inputStepper.value))
+                self.inputNumberLabel.alpha = 1.0
+            }, completion: nil)
+        }
+        goButtonTapped(self)
+    }
+    
+    
+    
     @IBAction func inputStepperValueChanged(_ sender: Any) {
         inputNumberLabel.text = String(Int(inputStepper.value))
     }
@@ -43,7 +58,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        inputStepperValueChanged(self)
+        inputNumberLabel.text = ""
     }
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
