@@ -16,6 +16,8 @@
 		FB9758D31E5B52380033EBC0 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9758D21E5B52380033EBC0 /* TodayViewController.swift */; };
 		FB9758D61E5B52380033EBC0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9758D41E5B52380033EBC0 /* MainInterface.storyboard */; };
 		FB9758DA1E5B52380033EBC0 /* RandoExtTarget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FB9758CD1E5B52380033EBC0 /* RandoExtTarget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FBD116301E6487DD00DBF0A0 /* RandomNumberCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD1162F1E6487DD00DBF0A0 /* RandomNumberCollectionViewController.swift */; };
+		FBD116321E64882C00DBF0A0 /* NumberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD116311E64882C00DBF0A0 /* NumberCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		FB9758D21E5B52380033EBC0 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		FB9758D51E5B52380033EBC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		FB9758D71E5B52380033EBC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD1162F1E6487DD00DBF0A0 /* RandomNumberCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomNumberCollectionViewController.swift; sourceTree = "<group>"; };
+		FBD116311E64882C00DBF0A0 /* NumberCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 			children = (
 				FB9758B71E5B4B970033EBC0 /* AppDelegate.swift */,
 				FB9758B91E5B4B970033EBC0 /* ViewController.swift */,
+				FBD1162F1E6487DD00DBF0A0 /* RandomNumberCollectionViewController.swift */,
+				FBD116311E64882C00DBF0A0 /* NumberCollectionViewCell.swift */,
 				FB9758BB1E5B4B970033EBC0 /* Main.storyboard */,
 				FB9758BE1E5B4B970033EBC0 /* Assets.xcassets */,
 				FB9758C01E5B4B970033EBC0 /* LaunchScreen.storyboard */,
@@ -233,6 +239,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB9758BA1E5B4B970033EBC0 /* ViewController.swift in Sources */,
+				FBD116321E64882C00DBF0A0 /* NumberCollectionViewCell.swift in Sources */,
+				FBD116301E6487DD00DBF0A0 /* RandomNumberCollectionViewController.swift in Sources */,
 				FB9758B81E5B4B970033EBC0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +455,7 @@
 				FB9758C81E5B4B970033EBC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB9758DB1E5B52380033EBC0 /* Build configuration list for PBXNativeTarget "RandoExtTarget" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +464,7 @@
 				FB9758DD1E5B52380033EBC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
